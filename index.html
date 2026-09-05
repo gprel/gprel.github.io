@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel Prélaz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <span class="logo">gabriel-prelaz</span>
+  <div class="navlinks">
+    <a href="#about">about</a>
+    <a href="#focus">focus</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero">
+    <h1>Gabriel Prélaz</h1>
+    <p class="tagline">Signal in, structure out.</p>
+  </section>
+
+  <section class="waveblock" aria-hidden="true">
+    <canvas id="wave" width="900" height="140"></canvas>
+    <div class="waveband">
+      <span>fs = 44100 Hz</span>
+      <span>window = hann</span>
+      <span>nfft = 2048</span>
+      <span>hop = 512</span>
+    </div>
+  </section>
+
+  <section id="about" class="block">
+    <div class="block-label">about</div>
+    <p>
+      I work across Python, machine learning, and the math underneath both —
+      probability theory and statistics as the actual foundation, not an
+      afterthought. Most of what I build sits close to the metal: computer
+      architecture and GPU internals from a Python-first angle, and acoustic
+      signal processing as the thread that ties the low-level and the
+      statistical together.
+    </p>
+    <p>
+      I like problems where a waveform, a probability distribution, and a
+      line of optimized code all describe the same thing.
+    </p>
+  </section>
+
+  <section id="focus" class="block">
+    <div class="block-label">focus</div>
+    <ul class="focus-list">
+      <li>
+        <span class="focus-name">machine learning</span>
+        <span class="focus-desc">models, training pipelines, applied statistics</span>
+      </li>
+      <li>
+        <span class="focus-name">probability &amp; statistics</span>
+        <span class="focus-desc">the math that makes ML decisions defensible</span>
+      </li>
+      <li>
+        <span class="focus-name">computer architecture</span>
+        <span class="focus-desc">how Python code actually runs on hardware</span>
+      </li>
+      <li>
+        <span class="focus-name">GPU computing</span>
+        <span class="focus-desc">parallelism, memory layout, kernels from Python</span>
+      </li>
+      <li>
+        <span class="focus-name">acoustic signal processing</span>
+        <span class="focus-desc">turning sound into numbers worth modeling</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="block">
+    <div class="block-label">contact</div>
+    <p>
+      <a class="contact-link" href="mailto:you@example.com">you@example.com</a>
+    </p>
+    <div class="social">
+      <a href="https://github.com/">github</a>
+      <a href="https://linkedin.com/">linkedin</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>Gabriel Prélaz © 2026</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
